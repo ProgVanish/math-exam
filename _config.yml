@@ -1,9 +1,23 @@
 title: Экзаменационные билеты
 description: Расписанные билеты к экзамену с математическими формулами
+baseurl: "/math-exam" # Имя вашего репозитория
+url: "" # Базовый URL вашего сайта
+
+# Настройки темы
 theme: minima
+
+# Настройки Markdown
 markdown: kramdown
 kramdown:
   math_engine: mathjax
+
+# Плагины
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+# Настройки GitHub Pages
+github: [metadata]
+safe: true
+lsi: false
+increment_posts: false

@@ -12,4 +12,8 @@ mathjax: true
     {{ content }}
   </div>
 
+  {% if page.title contains 'Билет' %}
+  {% include ticket-navigation.html %}
+  {% endif %}
+
 </article>

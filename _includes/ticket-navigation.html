@@ -1,0 +1,11 @@
+<div class="ticket-navigation">
+  <h3>Навигация по билетам</h3>
+  <ul>
+    {% assign sorted_pages = site.pages | sort: 'title' %}
+    {% for page in sorted_pages %}
+      {% if page.title contains 'Билет' %}
+        <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

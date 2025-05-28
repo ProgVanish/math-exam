@@ -1,0 +1,93 @@
+---
+---
+
+@import "minima";
+
+// Пользовательские стили
+body {
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.site-header {
+  border-top: 5px solid #424242;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: #f8f8f8;
+}
+
+.site-title {
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.page-content {
+  padding: 30px 0;
+}
+
+.post-content {
+  margin-bottom: 30px;
+}
+
+.post-content h1, 
+.post-content h2, 
+.post-content h3, 
+.post-content h4 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+.post-content h1 {
+  color: #2a7ae2;
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 0.3em;
+}
+
+.post-content h2 {
+  color: #24292e;
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 0.3em;
+}
+
+// Стили для математических формул
+.MathJax {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+// Стили для навигации по билетам
+.ticket-navigation {
+  margin: 2em 0;
+  padding: 1em;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+}
+
+.ticket-navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ticket-navigation li {
+  margin: 0.3em;
+}
+
+.ticket-navigation a {
+  display: inline-block;
+  padding: 0.3em 0.7em;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: white;
+  text-decoration: none;
+}
+
+.ticket-navigation a:hover {
+  background-color: #2a7ae2;
+  color: white;
+}
