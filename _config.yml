@@ -21,11 +21,14 @@ theme: minima
 markdown: kramdown
 kramdown:
   math_engine: katex
+  math_engine_opts:
+    preview: true
 
 # Плагины
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - kramdown-math-katex
 
 # Настройки GitHub Pages
 github: [metadata]
