@@ -4,7 +4,8 @@
     {% assign sorted_pages = site.pages | sort: 'title' %}
     {% for page in sorted_pages %}
       {% if page.title contains 'Билет' %}
-        <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+        {% assign ticket_parts = page.title | split: " " %}
+        <li><a href="{{ page.url | relative_url }}">{{ ticket_parts[0] }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>

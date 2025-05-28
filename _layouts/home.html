@@ -16,9 +16,7 @@ layout: default
     <ul>
       {% assign sorted_pages = site.pages | sort: 'title' %}
       {% for page in sorted_pages %}
-        {% if page.title contains 'Билет' %}
-          <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
-        {% endif %}
+        <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
       {% endfor %}
     </ul>
   </div>
