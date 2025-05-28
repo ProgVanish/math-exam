@@ -1,0 +1,9 @@
+title: Экзаменационные билеты
+description: Расписанные билеты к экзамену с математическими формулами
+theme: minima
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
