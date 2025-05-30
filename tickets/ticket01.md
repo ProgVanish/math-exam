@@ -80,6 +80,21 @@ $$ \overline{E} $$ — наименьшее замкнутое множеств�
     </tr>
   </tbody>
 </table>
+---
 
+**Теорема 17.** Для любого $E \subset \mathbb{R}^d$ выполнено
+$\overline{E} = \text{int} E \cup \partial E$ и $\overline{E} = E \cup \partial E$.
+
+Кроме того,
+$\mathbb{R}^d = \text{int} E \cup \partial E \cup \text{int} E^c$.
+
+**Доказательство.**
+Так как $\partial E = \overline{E} \cap E^c$, то $\partial E \subset \overline{E}$. Пусть $x \in \overline{E}$. Либо $x$ является внутренней точкой $E$, либо в любой $\varepsilon$-окрестности точки $x$ найдётся точка из $E^c$. Во втором случае $x \in \overline{E^c}$. Таким образом, $\overline{E} = \text{int} E \cup \partial E$.
+
+Так как $\text{int} E \subset E$, то $\overline{E} = \text{int} E \cup \partial E \subset E \cup \partial E$. С другой стороны, $E$ и $\partial E$ лежат в $\overline{E}$. Значит $E \cup \partial E = \overline{E}$.
+
+Наконец, по теореме 7 имеем $\mathbb{R}^d = \overline{E \cup E^c} = \overline{E} \cup \text{int} E^c$, а в силу доказанного $\overline{E} = \text{int} E \cup \partial E$.
+
+---
 Citations:
 [1] [matangus.pdf](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/collection_711317b4-24f2-4d16-9975-0c19e8d7dac3/b204a07a-e1d2-4cb8-92f3-656e185292b3/matangus.pdf)
